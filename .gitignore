@@ -37,3 +37,8 @@ yarn-error.log*
 .netlify
 
 _static
+.idea/.gitignore
+.idea/minimal.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/Project_Default.xml
