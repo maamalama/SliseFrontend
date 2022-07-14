@@ -46,6 +46,7 @@ export const ListItemTextStyle = styled(ListItemText, {
     width: 0,
     opacity: 0,
   }),
+  color: '#F3F4EF'
 }));
 
 export const ListItemIconStyle = styled(ListItemIcon)({

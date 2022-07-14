@@ -27,21 +27,22 @@ const navConfig = [
   // GENERAL
   // ----------------------------------------------------------------------
   {
-    subheader: 'general',
     items: [
       {
         title: 'app',
         path: PATH_DASHBOARD.general.app,
         icon: ICONS.dashboard,
       },
-      { title: 'e-commerce', path: PATH_DASHBOARD.general.ecommerce, icon: ICONS.ecommerce },
-      { title: 'analytics', path: PATH_DASHBOARD.general.analytics, icon: ICONS.analytics },
-      { title: 'banking', path: PATH_DASHBOARD.general.banking, icon: ICONS.banking },
-      { title: 'booking', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking },
+      { title: 'Dashboard', path: PATH_DASHBOARD.general.ecommerce, icon: ICONS.ecommerce },
+      { title: 'Whitelist', path: PATH_DASHBOARD.general.analytics, icon: ICONS.analytics },
+      { title: 'Social Data', path: PATH_DASHBOARD.general.banking, icon: ICONS.banking },
+      { title: 'Mutual Holders', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking },
+      { title: 'Community Insights', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking },
+      { title: 'ML Targeting', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking },
     ],
   },
 
-  // MANAGEMENT
+  /*// MANAGEMENT
   // ----------------------------------------------------------------------
   {
     subheader: 'management',
@@ -114,7 +115,7 @@ const navConfig = [
         icon: ICONS.kanban,
       },
     ],
-  },
+  },*/
 ];
 
 export default navConfig;

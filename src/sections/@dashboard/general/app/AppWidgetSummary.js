@@ -31,7 +31,7 @@ AppWidgetSummary.propTypes = {
   total: PropTypes.number.isRequired,
 };
 
-export default function AppWidgetSummary({ title, percent, total, chartColor, chartData }) {
+export default function  AppWidgetSummary({ title, percent, total, chartColor, chartData }) {
   const theme = useTheme();
 
   const chartOptions = {
@@ -53,10 +53,10 @@ export default function AppWidgetSummary({ title, percent, total, chartColor, ch
   return (
     <Card sx={{ display: 'flex', alignItems: 'center', p: 3 }}>
       <Box sx={{ flexGrow: 1 }}>
-        <Typography variant="subtitle2">{title}</Typography>
+        <Typography textAlign="center" variant="subtitle2">{title}</Typography>
 
         <Stack direction="row" alignItems="center" spacing={1} sx={{ mt: 2, mb: 1 }}>
-          <IconWrapperStyle
+         {/* <IconWrapperStyle
             sx={{
               ...(percent < 0 && {
                 color: 'error.main',
@@ -65,17 +65,17 @@ export default function AppWidgetSummary({ title, percent, total, chartColor, ch
             }}
           >
             <Iconify width={16} height={16} icon={percent >= 0 ? 'eva:trending-up-fill' : 'eva:trending-down-fill'} />
-          </IconWrapperStyle>
-          <Typography component="span" variant="subtitle2">
+          </IconWrapperStyle>*/}
+         {/* <Typography  component="span" variant="subtitle2">
             {percent > 0 && '+'}
             {fPercent(percent)}
-          </Typography>
+          </Typography>*/}
         </Stack>
 
-        <Typography variant="h3">{fNumber(total)}</Typography>
+        <Typography textAlign="center" variant="h3">{fNumber(total)}</Typography>
       </Box>
 
-      <ReactApexChart type="bar" series={[{ data: chartData }]} options={chartOptions} width={60} height={36} />
+      {/*<ReactApexChart type="bar" series={[{ data: chartData }]} options={chartOptions} width={60} height={36} />*/}
     </Card>
   );
 }

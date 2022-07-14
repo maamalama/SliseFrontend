@@ -31,6 +31,7 @@ const SimpleBarStyle = styled(SimpleBarReact)(({ theme }) => ({
   '& .simplebar-mask': {
     zIndex: 'inherit',
   },
+  background: '#131F0F',
 }));
 
 // ----------------------------------------------------------------------

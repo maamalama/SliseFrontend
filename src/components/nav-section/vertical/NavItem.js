@@ -26,11 +26,12 @@ NavItemRoot.propTypes = {
 
 export function NavItemRoot({ item, isCollapse, open = false, active, onOpen }) {
   const { title, path, icon, info, children } = item;
+  const color = '#F3F4EF';
 
   const renderContent = (
     <>
       {icon && <ListItemIconStyle>{icon}</ListItemIconStyle>}
-      <ListItemTextStyle disableTypography primary={title} isCollapse={isCollapse} />
+      <ListItemTextStyle color={color} disableTypography primary={title} isCollapse={isCollapse} />
       {!isCollapse && (
         <>
           {info && info}
@@ -75,11 +76,11 @@ NavItemSub.propTypes = {
 
 export function NavItemSub({ item, open = false, active = false, onOpen }) {
   const { title, path, info, children } = item;
-
+  const color = '#F3F4EF';
   const renderContent = (
     <>
       <DotIcon active={active} />
-      <ListItemText disableTypography primary={title} />
+      <ListItemText color={color} disableTypography primary={title} />
       {info && info}
       {children && <ArrowIcon open={open} />}
     </>
