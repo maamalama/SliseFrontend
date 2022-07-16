@@ -22,6 +22,7 @@ import {
   AppTopInstalledCountries,
 } from '../../sections/@dashboard/general/app';
 
+
 // ----------------------------------------------------------------------
 
 GeneralApp.getLayout = function getLayout(page) {
@@ -48,7 +49,9 @@ export default function GeneralApp() {
           </Grid>*/}
 
           <Grid item xs={12} md={4}>
+        
             <AppWidgetSummary
+             icon='majesticons:paper-fold-text-line'
               title="Whitelist Size"
               percent={2.6}
               total={18765}
@@ -60,6 +63,7 @@ export default function GeneralApp() {
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
               title="Twitter Followers"
+              icon="logos:twitter"
               percent={0.2}
               total={4876}
               chartColor={theme.palette.chart.blue[0]}
@@ -69,6 +73,7 @@ export default function GeneralApp() {
 
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
+            icon="logos:discord-icon"
               title="Discord Members"
               percent={-0.1}
               total={678}
@@ -79,6 +84,7 @@ export default function GeneralApp() {
 
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
+             icon="emojione:blue-circle"
                 title="Bluechip Holders"
                 percent={2.6}
                 total={18765}
@@ -89,6 +95,7 @@ export default function GeneralApp() {
 
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
+                icon="fxemoji:whale"
                 title="Whales"
                 percent={0.2}
                 total={4876}
@@ -99,6 +106,7 @@ export default function GeneralApp() {
 
           <Grid item xs={12} md={4}>
             <AppWidgetSummary
+                icon="noto:robot"
                 title="Bots identified"
                 percent={-0.1}
                 total={678}
