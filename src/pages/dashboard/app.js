@@ -8,6 +8,8 @@ import useSettings from '../../hooks/useSettings';
 import Layout from '../../layouts';
 // components
 import Page from '../../components/Page';
+import MLPrediction from '../../components/MLPrediction'
+import Label from '../../components/Label'
 // sections
 import {
   AppWidget,
@@ -20,6 +22,7 @@ import {
   AppWidgetSummary,
   AppCurrentDownload,
   AppTopInstalledCountries,
+
 } from '../../sections/@dashboard/general/app';
 
 
@@ -39,7 +42,7 @@ export default function GeneralApp() {
   return (
     <Page title="General: App">
       <Container maxWidth={themeStretch ? false : 'xl'}>
-        <Grid container spacing={3}>
+        <Grid container spacing={4}>
           {/*<Grid item xs={12} md={8}>
             <AppWelcome displayName={user?.displayName} />
           </Grid>
@@ -47,8 +50,7 @@ export default function GeneralApp() {
           <Grid item xs={12} md={4}>
             <AppFeatured />
           </Grid>*/}
-
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3} direction="column" >
         
             <AppWidgetSummary
              icon='majesticons:paper-fold-text-line'
@@ -59,8 +61,7 @@ export default function GeneralApp() {
               chartData={[5, 18, 12, 51, 68, 11, 39, 37, 27, 20]}
             />
           </Grid>
-
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <AppWidgetSummary
               title="Twitter Followers"
               icon="logos:twitter"
@@ -71,7 +72,7 @@ export default function GeneralApp() {
             />
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <AppWidgetSummary
             icon="logos:discord-icon"
               title="Discord Members"
@@ -81,8 +82,13 @@ export default function GeneralApp() {
               chartData={[8, 9, 31, 8, 16, 37, 8, 33, 46, 31]}
             />
           </Grid>
+          <Grid item xs={12} md={3}>
+         <MLPrediction 
+         title="ML Prediction"
+         />
+          </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <AppWidgetSummary
              icon="emojione:blue-circle"
                 title="Bluechip Holders"
@@ -93,7 +99,7 @@ export default function GeneralApp() {
             />
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <AppWidgetSummary
                 icon="fxemoji:whale"
                 title="Whales"
@@ -104,7 +110,7 @@ export default function GeneralApp() {
             />
           </Grid>
 
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={3}>
             <AppWidgetSummary
                 icon="noto:robot"
                 title="Bots identified"
