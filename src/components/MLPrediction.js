@@ -82,7 +82,7 @@ export default function MLPrediction({title}) {
         aria-labelledby="non-linear-slider"
       />
            <Typography textAlign="center" variant="subtitle2">Probability Of Sold Out</Typography>
-           <Stack direction='row' spacing={2}>
+           <Stack direction='row' spacing={2}  justifyContent="center"alignItems="center">
            <Typography textAlign="center" variant="h4">86%</Typography>
             <Label variant="filled" color='success'>High</Label>
             </Stack>
